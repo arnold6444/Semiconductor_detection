@@ -1,0 +1,13 @@
+
+========================================
+          AUTO-TUNE RESULTS          
+========================================
+Normal Samples Used: 16
+Abnormal Samples Used: 4
+----------------------------------------
+Threshold T_low (PASS)      : 0.0300 (95%)
+Threshold T_high (FAIL_CAND): 0.0865 (99%)
+----------------------------------------
+Score Model Centroids: torch.Size([3, 384])
+========================================
+
