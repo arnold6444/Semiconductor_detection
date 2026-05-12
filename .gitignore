@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
+outputs/
+cache/
+checkpoints/*.pth
+checkpoints/*.pt
+legacy_hybrid_agent/checkpoints/*.pth
+legacy_hybrid_agent/checkpoints/*.pt
+.ipynb_checkpoints/

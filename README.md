@@ -4,6 +4,16 @@
 
 > "모델이 아닌 Agent가 판단한다"
 
+## Repository Status
+
+This is the canonical portfolio repository for the semiconductor anomaly detection work.
+
+- Active implementation: root `main.py`, `config.py`, and `src/`
+- Legacy merged reference: `legacy_hybrid_agent/`
+- Archived old GitHub repo: `hy_ngv`
+
+`hy_ngv` and `Semiconductor_detection` are the same project line. Future updates should go into this repository.
+
 ## 아키텍처 개요
 
 ```
@@ -67,15 +77,12 @@ hy_ngv3/
 │   ├── policy.py                # 판정 정책 (threshold, 규칙)
 │   └── agent.py                 # AI Agent 오케스트레이터
 │
-├── cache/                       # 학습된 모델/파라미터 캐시
-│   ├── normal_vectors.pt        # DINOv2 정상 특징 벡터
-│   ├── efficientnet_weights.pt  # EfficientNet 가중치
-│   ├── params.json              # 학습 파라미터
-│   └── references.json          # 레퍼런스 이미지 정보
+├── legacy_hybrid_agent/         # 이전 hy_ngv 구현 참고용
+│   ├── agent/                   # Local model + ambiguity + LLM fusion
+│   ├── checkpoints/config.example.yaml
+│   └── requirements.txt
 │
-└── outputs/                     # 예측 결과
-    ├── evaluation.csv
-    └── validation_all_stages.csv
+└── outputs/                     # 예측 결과, gitignore 처리
 ```
 
 ## 핵심 설계 결정

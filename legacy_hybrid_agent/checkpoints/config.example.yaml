@@ -1,0 +1,23 @@
+alpha: 0.7
+llm:
+  max_retries: 3
+  model: gemini-1.5-flash
+  provider: gemini
+  timeout: 30
+margin: 0.1
+model:
+  backbone: efficientnet_b0
+  checkpoint: model.pth
+  num_classes: 1
+preprocessing:
+  mean:
+  - 0.485
+  - 0.456
+  - 0.406
+  size: 224
+  std:
+  - 0.229
+  - 0.224
+  - 0.225
+seed: 42
+threshold: 0.49000000000000016
